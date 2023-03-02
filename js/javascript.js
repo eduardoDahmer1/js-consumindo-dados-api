@@ -48,11 +48,6 @@ function validarFormulario() {
       alert('Por favor, preencha o campo para continuar');
       return false;
     }
-      // Verifica se os campos obrigatórios estão preenchidos
-  if (!nome || !email || !password) {
-    alert('Por favor, preencha todos os campos obrigatórios.');
-    return;
-  }
 
   // Verifica se o e-mail é válido
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
