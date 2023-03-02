@@ -55,5 +55,9 @@ function validarFormulario() {
     alert('Por favor, insira um endereço de e-mail válido.');
     return;
   }
+   // Envie o formulário
+   alert('Formulário enviado com sucesso!');
+   document.getElementById('formulario').submit();
+
     return true;
   }
