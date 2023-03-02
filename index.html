@@ -19,7 +19,7 @@
 
     <header class="cabeçalho">
         <div class="container">
-            <input type="checkbox" id="menu" class="container__botao">
+            <input type="checkbox" id="menu" class="container__botao" required>
             <label for="menu" class="container__rotulo">
                 <span class="cabeçalho__menu-hamburguer container__imagem"></span>
             </label>
@@ -73,7 +73,7 @@
     <main class="principal">
         <h2 class="principal__titulo">Dados do cadastro</h2>
 
-        <form class="principal__formulario" id="formulario" target="_blank"
+        <form class="principal__formulario" id="formulario" target="_blank"  onsubmit="return validarFormulario()"
             onsubmit="location.replace('./cadastro-finalizado.html')">
             <h3 class="principal__subtitulo">Dados pessoais</h3>
             <div class="formulario__campo">

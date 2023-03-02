@@ -25,3 +25,29 @@ async function buscaEndereco(cep) {
 
 var cep = document.getElementById('cep');
 cep.addEventListener("focusout", () => buscaEndereco(cep.value));
+
+function validarFormulario() {
+    const nome = document.getElementById('nome').value;
+    const nascimento = document.getElementById('nascimento').value;
+    const telefone = document.getElementById('telefone').value;
+    const email = document.getElementById('email').value;
+    const endereco = document.getElementById('endereco').value;
+    const cep = document.getElementById('cep').value;
+    const numero = document.getElementById('numero').value;
+    const complemento = document.getElementById('complemento').value;
+    const bairro = document.getElementById('bairro').value;
+    const cidade = document.getElementById('cidade').value;
+    const estado = document.getElementById('estado').value;
+    
+    if (nome === '' || nascimento === '' || telefone === '' || endereco === '' || cep === '' || numero === '' || complemento === '') {
+      alert('Por favor, preencha o campo para continuar');
+      return false;
+    }
+    
+    if (email === '' || bairro === '' || cidade === '' || estado === '') {
+      alert('Por favor, preencha o campo para continuar');
+      return false;
+    }
+    
+    return true;
+  }
